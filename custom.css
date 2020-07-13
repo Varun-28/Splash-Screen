@@ -10,18 +10,17 @@ body {
   position: relative;
   width: 80px;
   height: 80px;
-    justify-items: center;
   transform: rotate(45deg);
   transform-origin: 40px 40px;
+    margin-left: 46%;
 }
 .lds-heart div {
   top: 32px;
   left: 32px;
   position: absolute;
   width: 32px;
-    justify-items: center;
   height: 32px;
-  background-image: linear-gradient(to right, pink,red,deeppink);
+background-image: linear-gradient(to top, red ,orangered,crimson,pink,deeppink,purple);
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .lds-heart div:after,
@@ -31,7 +30,7 @@ body {
   display: block;
   width: 32px;
   height: 32px;
- background-image: linear-gradient(to right, pink,red,deeppink);
+   background-image: linear-gradient(to top, red ,orangered,crimson,pink,deeppink,purple);
 }
 .lds-heart div:before {
   left: -24px;
@@ -92,6 +91,8 @@ h1.title,
     font-size: 30px;
     justify-content: center;
     text-align: center;
+    font-family: inherit;
+    color: white;
     
 }
 /* start welcome animation */
