@@ -95,18 +95,66 @@ h1.title,
     color: white;
     
 }
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid ;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 7s steps(59) 3s 5 normal both,
+             blinkTextCursor 500ms steps(59) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
 /* start welcome animation */
 
 body.welcome {
-  background: #512da8;
+  background-image:linear-gradient(to right, blue,blueviolet, darkblue);
+    background-image: url("kelly-sikkema-vtKc7BpJ-vU-unsplash.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+   
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
 .welcome .splash {
   height: 0px;
   padding: 0px;
-  border: 130em solid blue;
+  border: 130em solid white;
  position: fixed;
   left: 50%;
   top: 100%;
@@ -119,8 +167,11 @@ body.welcome {
   animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
 }
 
+.line-1 anim-typewriter{
+    color: black;
+}
 .welcome #welcome {
-  background-image: linear-gradient(to right,mediumpurple, rebeccapurple,blue,purple); 
+  background-image:url("https://bestanimations.com/Books/writing/pen-writing-calligraphy-you-are-beautiful-animated-gif.gif"); 
     background-image: linear-gradient(to top,#4c75f2,darkcyan,white);
   width: 56px;
     
@@ -191,7 +242,7 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-    background-image: linear-gradient(to left, purple,white,blue);
+    background-image:url("https://bestanimations.com/Books/writing/pen-writing-calligraphy-you-are-beautiful-animated-gif.gif");
     top: 100%;
   }
   50% {
